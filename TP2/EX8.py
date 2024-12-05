@@ -29,7 +29,6 @@ personne1 = Personne("Ali")
 personne2 = Personne("Nor")
 personne3 = Personne("Hassan")
 
-
 # Ajout d'amis
 personne1.ajouter_ami(personne2)
 personne1.ajouter_ami(personne3)
