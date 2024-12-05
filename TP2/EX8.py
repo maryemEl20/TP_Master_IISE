@@ -26,8 +26,8 @@ class Personne:
 
 # Création de personnes
 personne1 = Personne("Ali")
-personne2 = Personne("Sara")
-personne3 = Personne("Omar")
+personne2 = Personne("Nor")
+personne3 = Personne("Hassan")
 
 
 # Ajout d'amis
