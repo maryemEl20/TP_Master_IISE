@@ -1,5 +1,4 @@
 
-
 class CompteBancaire:
     
     def __init__(self, titulaire, solde):
