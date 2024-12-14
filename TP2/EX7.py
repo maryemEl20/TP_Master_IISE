@@ -1,5 +1,4 @@
 # Définition de la classe Livre
-
 class Livre:
     def __init__(self, titre, auteur, annee_publication):
         self.titre = titre
