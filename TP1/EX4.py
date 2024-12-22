@@ -1,5 +1,5 @@
 def compte_occurences(liste):
- 
+
     dic = {}
     for mot in liste:
         if mot not in dic:

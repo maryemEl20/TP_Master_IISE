@@ -28,11 +28,6 @@ class Personne:
 personne1 = Personne("Ali")
 personne2 = Personne("Nor")
 personne3 = Personne("Hassan")
-<<<<<<< HEAD
-
-=======
->>>>>>> 8b1c6e98dba08c507fa9b9cfb2453a23d4328ca2
-
 # Ajout d'amis
 personne1.ajouter_ami(personne2)
 personne1.ajouter_ami(personne3)

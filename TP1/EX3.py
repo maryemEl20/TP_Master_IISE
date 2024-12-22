@@ -8,5 +8,6 @@ def intersection(ensemble1, ensemble2):
 
 ensemble1 = {1, 2, 3, 4}
 ensemble2 = {2, 4, 3, 6}
+
 resultat = intersection(ensemble1, ensemble2)
 print("Intersection :", resultat)  #Intersection : {2, 3, 4}
