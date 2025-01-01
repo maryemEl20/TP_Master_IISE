@@ -43,3 +43,5 @@ moto = Moto("Davidson", "Street 750", 2020, 47, "Essence", "Cruiser")
 voiture.afficher_info()
 print("-----------------------------")
 moto.afficher_info()
+
+print(Voiture.mro())

@@ -21,10 +21,10 @@ class Rectangle(Forme):
     def calculer_surface(self):
         return self.lan * self.lar 
 
+
 def afficher_surface(formes):
     for forme in formes:
-        print(f"Surface : {forme.calculer_surface():.2f}")
-
+        print(f"la surface de {forme.__class__.__name__} est {forme.calculer_surface():.2f}") 
 cercle = Cercle(10)  
 rectangle = Rectangle(2, 3)  
 

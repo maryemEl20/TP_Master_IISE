@@ -1,0 +1,5 @@
+Exercice 1 : Lecture de Fichiers
+Créez un fichier 
+texte nommé "exemple.txt" 
+contenant au moins 
+cinq lignes de texte.
