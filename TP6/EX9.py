@@ -7,13 +7,17 @@ def get_positive_integer():
     while True:
         try:
             user_input = int(input("Veuillez entrer un entier positif: "))
+            
+                 # Vérifier si l'entier est positif
             if user_input <= 0:
                 print("L'entier doit être positif. Essayez encore.")
             else:
                 print(f"L'entier valide que vous avez saisi est : {user_input}")
                 return user_input
         except ValueError:
-            print("Ce n'est pas un entier valide. Veuillez entrer un entier.")
+                 # Gérer les erreurs de conversion si l'entrée n'est pas un entier
+            print("Erreur : Vous devez entrer un nombre entier. Essayez encore.")
 
-get_positive_integer()
+if __name__ == "__main__":
+    get_positive_integer()
 

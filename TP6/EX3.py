@@ -14,9 +14,9 @@ def read_file(file_name):
         for ligne in content:
             print(f"{ligne.strip()}")
     finally:
-        if file:
+        if 'file' in locals():
             file.close()
-        print("\nFin du traitement")   
+    print("\nFin du traitement")   
 
 file_name = "exemple.txt" 
 read_file(file_name) 

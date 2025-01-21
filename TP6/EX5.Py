@@ -2,6 +2,7 @@
 Écrivez une fonction `process_input(user_input)` qui tente de convertir `user_input` en entier et
 d'effectuer une division par 10. Gérez les exceptions `ValueError` et `ZeroDivisionError` dans des
 blocs `except` séparés, en affichant des messages d'erreur appropriés.
+
 """""
 def process_input(user_input):
     try:

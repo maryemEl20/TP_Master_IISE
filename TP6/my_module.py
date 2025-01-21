@@ -1,28 +1,32 @@
 
+import os
+
 def safe_division(a, b):
-    try:
+    if b != 0:
         result = a/b
-        print("Result :", result)
-    except ZeroDivisionError:
-        print("Error : Division by zero is not allowed.")
+        print ("Result :", result)
+    else:
+        print ("Error : Division by zero is not allowed.")
+
 
 def convert_to_int(value):
-    try:
-        return int(value)
-    except ValueError:
-        return f"Failed to convert '{value}' to an integer."
+    if isinstance(value, int):
+        print(value) 
+    elif isinstance(value, str) and (value.lstrip('-').isdigit()):
+        print(int(value))
+    else:
+        print(f"Failed to convert '{value}' to an integer.") 
       
-
 def read_file(file_name):
-    try:
-        # Open and read the file
+  
+    if os.path.exists(file_name):
+        # File exists, read its content
         file = open(file_name, "r")
         content = file.readlines()
-    except FileNotFoundError:
-        print(f"Error: The file '{file_name}' does not exist.")
-    else : 
+        file.close()  # Close the file after reading
         for ligne in content:
             print(f"{ligne.strip()}")
-    finally:
-        print("\nFin du traitement")   
+    else:
+        # File does not exist
+        print(f"Error: The file '{file_name}' does not exist.")
 

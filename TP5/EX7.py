@@ -1,8 +1,8 @@
 import os
-import shutil
+import shutil #Déplacer , Copier 
 
 # Step 1: Create the file "journal.txt"
-with open("journal.txt", "w", encoding="utf-8") as file:
+with open("journal.txt", "w") as file:
     file.writelines([
         "Today, I learned how to manipulate files using Python.\n",
         "It's a powerful and versatile programming language.\n",
@@ -17,6 +17,9 @@ print("The file 'journal.txt' has been copied as 'journal_copie.txt'.")
 # Step 3: Create the folder and move the copied file
 source = "journal_copie.txt"
 dossier = "archives/journal_copie.txt"
+dossier_r = "archives"
+if not os.path.exists(dossier_r):
+    os.makedirs(dossier_r)
 
 shutil.move(source,dossier)
 print("The file 'journal_copie.txt' has been moved to the 'archives' folder.")

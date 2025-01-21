@@ -5,7 +5,7 @@ erreur si le fichier n'est pas trouvé.
 """""
 
 import logging
-logging.basicConfig(filename='error.log', format= '%(message)s')
+logging.basicConfig(filename='error.log',level=logging.ERROR, format= '%(message)s')
 
 def log_error(message):
     logging.error(message)
@@ -22,11 +22,9 @@ def read_file(file_name):
         log_error(error_message)  # Enregistrer l'erreur dans error.log
     finally:
         print("Fin du traitement\n")   
-
 file_name = "ex.txt" 
 read_file("non_existent_file.txt") 
 read_file(file_name) 
-
 file_name = "exemple.txt" 
 read_file(file_name) 
 

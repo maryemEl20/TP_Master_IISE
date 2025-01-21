@@ -1,5 +1,10 @@
 import os
 
+#Changer le répertoire courant
+#Supprimer un répertoire vide
+#Gestion des fichiers
+#Supprimer un fichier
+
 # Renommer le fichier "phrases.txt" en "anciennes_phrases.txt"
 ancien_nom = "phrases.txt"
 nouveau_nom = "anciennes_phrases.txt"

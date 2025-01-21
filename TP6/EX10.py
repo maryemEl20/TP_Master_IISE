@@ -17,9 +17,7 @@ def read_file(file_name):
         print("Contenu du fichier : ")
         for ligne in content:
             print(f"{ligne.strip()}")
-    finally:
-        print("\nFin du traitement")   
-
+            
 
 def get_positive_integer():
     while True:

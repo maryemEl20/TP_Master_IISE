@@ -4,8 +4,7 @@ lève cette exception si l'âge est négatif. Testez la fonction dans un bloc `t
 imprimant un message approprié.
 """""
 class NegativeAgeError(Exception):
-     pass
-
+    pass
 def set_age(age):
     if age < 0:
         raise NegativeAgeError(f"Invalid age: {age}. Age cannot be negative.")

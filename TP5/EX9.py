@@ -6,8 +6,12 @@ try:
         content = file.readlines()
 
     # Calculate statistics
+    total_words = 0
     total_lines = len(content)
-    total_words = sum(len(line.split()) for line in content)
+    #total_words = sum(len(line.split()) for line in content)
+    for line in content:
+        total_words = sum(len(line.split()))
+        
     total_characters = sum(len(line) for line in content)
 
     # Display the results
