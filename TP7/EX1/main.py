@@ -1,5 +1,5 @@
 from conversion import dollars_to_dirhams,meters_to_kilometers
-
+from EX3 import test_conversion
 # Test de dollars_to_dirhams
 try:
     dollars = float(input("Entrez un montant en dollars : "))

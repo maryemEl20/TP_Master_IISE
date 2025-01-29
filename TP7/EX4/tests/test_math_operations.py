@@ -3,9 +3,6 @@ import unittest
 import sys
 import os
 
-# Ajouter le dossier parent (contenant "src") au chemin d'importation
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
-
 from math_operations import additionner,soustraire,multiplier,diviser
 
 class TestMathOperations(unittest.TestCase):

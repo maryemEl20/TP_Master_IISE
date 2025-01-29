@@ -2,11 +2,12 @@
 import os
 
 def safe_division(a, b):
-    if b != 0:
+    try:
         result = a/b
-        print ("Result :", result)
-    else:
-        print ("Error : Division by zero is not allowed.")
+        return f"Result :", result
+    except ZeroDivisionError:
+        print(f"Error : Division by zero is not allowed.")
+        raise ZeroDivisionError() 
 
 
 def convert_to_int(value):
